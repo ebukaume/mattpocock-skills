@@ -22,6 +22,18 @@ Only include these when they add genuine value. Most records won't need them.
 - **Evidence**: how the user demonstrated the understanding (a question answered, an exercise completed, prior experience cited). Useful when the claim might be revisited.
 - **Implications**: what this unlocks or rules out for future sessions. Worth recording when non-obvious.
 
+## Review evidence
+
+When a record is used to advance the course or plan retrieval practice, include the evidence and review dates:
+
+```md
+Evidence: {What the user explained or completed, and what help they needed. Label self-reported knowledge as unverified.}
+Last checked: YYYY-MM-DD
+Review after: YYYY-MM-DD
+```
+
+Use ISO dates. After a review, update these lines with the new result and next date. Preserve unresolved misconceptions in the record; defer prerequisite-dependent material until the user demonstrates the prerequisite. Records without a review date remain valid and can be checked when their topic becomes a prerequisite. Superseded records do not enter the review queue.
+
 ## Numbering
 
 Scan `./learning-records/` for the highest existing number and increment by one.
