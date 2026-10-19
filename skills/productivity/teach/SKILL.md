@@ -78,15 +78,23 @@ Failing to understand the mission will mean knowledge acquisition is not grounde
 
 Missions may change as the user develops more skills and knowledge. This is normal - make sure to update the `MISSION.md` and add a learning record to capture the change. Confirm with the user before changing the mission.
 
+Use the observable outcomes in `MISSION.md` as completion criteria. When the user demonstrates those outcomes on an unfamiliar task, offer independent practice or review. Agree a revised mission before extending the course into a new goal.
+
 ## Zone Of Proximal Development
 
-Each lesson, the user should always feel as if they are being challenged 'just enough'.
+Each lesson should challenge the user 'just enough'. Read `MISSION.md`, `NOTES.md`, and the active learning records before choosing the next exercise.
 
-The user may specify an exact thing they want to learn. If they don't, figure out their zone of proximal development by:
+When the records do not establish the prerequisites for a topic, use a short diagnostic: ask the user to explain or apply one prerequisite, wait for their answer, and adapt from the evidence. Separate stated prior knowledge from demonstrated understanding. If they prefer to skip the diagnostic, start conservatively and check understanding in the first exercise.
 
-- Reading their `learning-records`
-- Figuring out the right thing to teach them based on their mission
-- Teach the most relevant thing that fits in their zone of proximal development
+Choose material that advances the mission from that starting point. An exact topic request still needs its prerequisites checked against the records, not a new interview about the whole mission.
+
+## Review
+
+At the start of a session, check active learning records for due reviews. Offer a brief retrieval exercise on a due concept before new material, prioritising prerequisites for the requested topic. Respect the user's choice to defer it.
+
+After the exercise, record what the user demonstrated, any misconception that remains, and a next review date using [LEARNING-RECORD-FORMAT.md](./LEARNING-RECORD-FORMAT.md). Increase the interval after successful delayed recall; shorten it when the user needs help. Choose an interval suited to the mission and the user's availability.
+
+These dates select work when `/teach` runs. They do not schedule background reminders or calendar events.
 
 ## Knowledge
 
@@ -107,7 +115,9 @@ For skill acquisition, difficulty is the tool. Effortful retrieval is what build
 
 Each of these should be based on a **feedback loop**, where the user receives feedback on their performance. This feedback loop should be as tight as possible, giving feedback immediately - and ideally automatically.
 
-For quizzes, each answer should be exactly the same number of words (and characters, if possible). Vary which position holds the correct answer across questions. Don't give the user any clues about the answer through formatting or order.
+For quizzes, write plausible choices with comparable detail and length. Let clarity determine the wording rather than forcing identical word counts. Avoid clues from formatting or a uniquely detailed correct answer.
+
+Browser quiz components should shuffle choices when rendering each question. Keep correctness and feedback attached to stable answer IDs rather than displayed positions, and verify that grading still identifies the intended answer after reordering. For printable quizzes, vary the answer positions and keep the answer key consistent.
 
 ## Acquiring Wisdom
 
